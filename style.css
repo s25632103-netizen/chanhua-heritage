@@ -10,3 +10,11 @@
 .content .note{margin:28px 0;font-size:15px}
 .content a{color:var(--wine);border-bottom:1px solid var(--gold)}
 @media(max-width:760px){.content{font-size:16px}.content h2{font-size:22px;margin-top:48px}.content p{text-align:left}}
+
+/* ===== 快速跳轉選單 ===== */
+html{scroll-behavior:smooth}
+.content h2,.content h3{scroll-margin-top:130px}
+.toc-jump{position:sticky;top:78px;z-index:1;margin:0 0 20px;text-align:right}
+.toc-jump select{font:15px inherit;font-family:inherit;color:var(--wine);background:var(--paper);border:1px solid var(--gold);border-radius:30px;padding:8px 18px;max-width:100%;box-shadow:0 6px 16px #603a2518;cursor:pointer}
+.to-top{position:fixed;right:22px;bottom:22px;width:44px;height:44px;line-height:44px;text-align:center;border-radius:50%;background:var(--wine);color:#fff!important;font-size:20px;box-shadow:0 6px 16px #603a2530;border:none!important}
+@media(max-width:760px){.toc-jump{top:120px}.content h2,.content h3{scroll-margin-top:180px}}
